@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  AcceptableRadio
 //
-//  Created by Jake on 1/16/15.
-//  Copyright (c) 2015 Acceptable Ice Development. All rights reserved.
+//  Created by May on 1/16/15.
+//  Copyright (c) 2015 Corvimae Development. All rights reserved.
 //
 
 import UIKit
@@ -13,7 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -43,11 +43,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
+    
+    
+    
 
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {
-        // The directory the application uses to store the Core Data store file. This code uses a directory named "com.acceptableice.AcceptableRadio" in the application's documents Application Support directory.
+        // The directory the application uses to store the Core Data store file. This code uses a directory named "com.corvimae.AcceptableRadio" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         return urls[urls.count-1] as NSURL
     }()
